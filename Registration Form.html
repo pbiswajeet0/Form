@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Box {
+            background-color: grey;
+            width: 500px;
+            height: 400px;
+            border: 15px solid rgb(16, 70, 16);
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 8px 8px 10px black;
+
+        }
+
+        #Heading {
+            width: 300px;
+            height: 37px;
+            border: 5px solid blue;
+            font-size: 30px;
+            text-align: center;
+            margin-left: 100px;
+            box-shadow: 8px 8px 10px black;
+            background-color: burlywood;
+        }
+
+        #Content {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #Register{
+            margin-left: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Conn.php" method="post">
+        <div id="Box">
+            <div id="Heading">Registration Form</div>
+            <div id="Content">
+                <tr>
+                    <td>First name:</td>
+                    <td><input type="text" name="t1" size=17(default)maxlength=6</td>
+                    <td>Last name:</td>
+                    <td><input type="text" name="t2" size=17(default)maxlength=6</td>
+                </tr>
+                    <br>
+                    <br>
+
+                <tr>
+                    <td>User name</td>
+                    <td><input type="text" name="t3" size=17(default)maxlength=6</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="t4" size=17(default)maxlength=6></td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="r1" value="M">Male
+                        <input type="radio" name="r1" value="F">Female
+                    </td>
+                </tr>
+                <tr>
+                    <br>
+                    <br>
+                    <td>Languages</td>
+                    <td><input type="checkbox" name="cb1" value="Odia">Odia
+                        <input type="checkbox" name="cb1" value="English">English
+                        <input type="checkbox" name="cb1" value="Hindi">Hindi
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <br>
+                        <td>Caste</td>
+                    
+                    <td><input type="radio" name="r2" value="SC">SC
+                        <input type="radio" name="r2" value="ST">ST
+                        <input type="radio" name="r2" value="OBC">OBC
+                        <input type="radio" name="r2" value="General">General
+                    </td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="t5" rows=5 cols=30></textarea></td>
+                </tr>
+                <br>
+                <br>
+                <div id="Register">
+                <td><input type="submit" name="b1" value="Register">
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
